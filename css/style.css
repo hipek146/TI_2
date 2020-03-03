@@ -1,0 +1,288 @@
+html {height: 100%;}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    min-width: 900px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100%;
+}
+main {
+    flex-grow: 1;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(39, 39, 39);
+    border-top: 2px solid #111;
+    color: #eee;
+    font-size: 19px;
+    margin-top: 15px;
+}
+footer > span {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+footer a {
+    color: #eee;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}
+
+h1 {
+    margin: 0px;
+    color: #444;
+    font-size: 39px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    box-shadow: 0px 1px 5px -1px #222;
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(229, 255, 225);
+}
+.tlo {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 20px;
+    border: 3px solid #333;
+    border-top: none;
+    box-shadow: 0px -1px 8px -1px #222;
+    background-image: linear-gradient(to right, rgb(138, 187, 216),rgb(176, 202, 218),rgb(138, 187, 216));
+}
+
+.flexCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+.dokumentacja {
+    padding: 20px;
+}
+header {
+    padding: 15px;
+    background-color: rgb(103, 207, 108);
+    border-bottom: 2px solid rgb(20, 83, 8);
+    box-shadow: 0px 0px 10px -3px rgb(20, 83, 8);
+    font-weight: bold;
+}
+header > span {
+    font-size: 35px;
+    margin-left: 40px;
+    margin-right: 20px;
+    color: rgb(54, 56, 54);
+}
+header > a, header > a:active, header > a:visited {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 21px;
+    color: rgb(233, 247, 229);
+}
+.active {
+    color: rgb(251, 253, 93) !important;
+}
+
+.blad {
+    margin: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(170, 1, 1);
+}
+.pomyslnie {
+    margin: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(20, 194, 14);
+}
+
+#info {
+    padding: 15px;
+    border-bottom: 2px solid #333;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.oczekiwanie {
+    padding: 10px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: rgb(247, 238, 214);
+    border-top: 2px solid rgb(206, 111, 22);
+    border-bottom: 1px solid rgb(214, 122, 37);
+    color: #333;
+}
+#timer {
+    position: relative;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    padding: 4px;
+    color: #444;
+    background-color: rgb(248, 243, 227);
+    border-bottom: 1px solid rgb(240, 172, 108);
+    box-sizing: border-box;
+}
+#timer:before {
+    position: absolute;
+    top: 0px;
+    left: -80px;
+    content: '';
+    width: 0px; 
+    height: 0px; 
+    border-bottom: 27px solid transparent;
+    border-right:80px solid rgb(235, 164, 99);
+    box-sizing: border-box;
+    display: block;
+}
+
+#timer:after {
+    position: absolute;
+    top: 0px;
+    right: -80px;
+    content: '';
+    width: 0px; 
+    height: 0px; 
+    border-bottom: 27px solid transparent;
+    
+    border-left:80px solid rgb(235, 164, 99);
+    box-sizing: border-box;
+    display: block;
+}
+
+.formularz {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    padding: 20px;
+    font-weight: bold;
+}
+.formularz > * {
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0px 0px 2px 0px #555;
+}
+
+.formularzLogowanie > * {
+    margin: 20px !important;
+    padding: 10px;
+    border: 1px solid #777;
+    background: rgb(241, 255, 253);
+}
+.formularzLogowanie {
+    border: 2px solid #333;
+    box-shadow: 0px 0px 6px 1px #444;
+    background-color: rgb(243, 248, 230);
+}
+
+
+.button {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(42, 48, 44);
+    padding: 5px;
+    width: 250px;
+    margin: auto !important;
+    margin-top: 20px !important;
+    background-color: rgb(194, 243, 235);
+    border: 2px solid rgb(52, 177, 139);
+}
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(176, 219, 248);
+    border: 2px solid rgb(6, 116, 106);
+    color: rgb(59, 63, 59);
+}
+
+#notki {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+}
+
+.notka {
+    min-width: 300px;
+    width: 300px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    background-image: radial-gradient(circle at top left, rgb(253, 242, 138), rgb(255, 230, 147));
+    border: 1px solid rgb(247, 205, 69);
+    border-radius: 6px;
+    box-shadow: 2px 5px 8px -1px #333;   
+}
+
+.notka > * {
+    padding: 10px;
+}
+
+.tresc {
+    flex-grow: 1;
+}
+
+.data, .godzina {
+    font-style: italic;
+    padding-top: 0px !important;
+    padding-bottom: 5px !important;
+    font-size: 14px;
+}
+
+.typ {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 8px;
+    border-top: 2px solid rgb(247, 205, 69);
+    font-weight: bold;
+}
+
+.analiza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 26px;
+    color: #222;
+}
+#ilosc {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 16px;
+}
+
+canvas {
+    border-bottom: 2px solid #222;
+    box-shadow: 0px 4px 3px -3px #222;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+#etykieta {
+    font-size: 19px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#etykieta > * {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.kolor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #444;
+    box-shadow: 0px 0px 2px 0px #333;
+    border-radius: 4px;
+    margin-right: 10px
+}
